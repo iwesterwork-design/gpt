@@ -1,6 +1,10 @@
 name: Build AgroGuide APK
 
 on:
+  push:
+    paths:
+      - 'AgroGuideAndroid/**'
+      - '.github/workflows/build-apk.yml'
   workflow_dispatch:
 
 permissions:
